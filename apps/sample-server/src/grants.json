@@ -1,0 +1,1262 @@
+[
+  {
+    "role": "admin",
+    "resource": "User",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "auditor",
+    "resource": "User",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "enfermera",
+    "resource": "User",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "medico",
+    "resource": "User",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "paciente",
+    "resource": "User",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "User",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "User",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "auditor",
+    "resource": "User",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "enfermera",
+    "resource": "User",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "medico",
+    "resource": "User",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "paciente",
+    "resource": "User",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "User",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "User",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "auditor",
+    "resource": "User",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "enfermera",
+    "resource": "User",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "medico",
+    "resource": "User",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "paciente",
+    "resource": "User",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "User",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "User",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "auditor",
+    "resource": "User",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "enfermera",
+    "resource": "User",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "medico",
+    "resource": "User",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "paciente",
+    "resource": "User",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "User",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "User",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "auditor",
+    "resource": "User",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "enfermera",
+    "resource": "User",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "medico",
+    "resource": "User",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "paciente",
+    "resource": "User",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "User",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Medico",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "auditor",
+    "resource": "Medico",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "enfermera",
+    "resource": "Medico",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "medico",
+    "resource": "Medico",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "paciente",
+    "resource": "Medico",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Medico",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Medico",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "auditor",
+    "resource": "Medico",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "enfermera",
+    "resource": "Medico",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "medico",
+    "resource": "Medico",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "paciente",
+    "resource": "Medico",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Medico",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Medico",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "auditor",
+    "resource": "Medico",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "enfermera",
+    "resource": "Medico",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "medico",
+    "resource": "Medico",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "paciente",
+    "resource": "Medico",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Medico",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Medico",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "auditor",
+    "resource": "Medico",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "enfermera",
+    "resource": "Medico",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "medico",
+    "resource": "Medico",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "paciente",
+    "resource": "Medico",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Medico",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Medico",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "auditor",
+    "resource": "Medico",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "enfermera",
+    "resource": "Medico",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "medico",
+    "resource": "Medico",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "paciente",
+    "resource": "Medico",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Medico",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Paciente",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "auditor",
+    "resource": "Paciente",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "enfermera",
+    "resource": "Paciente",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "medico",
+    "resource": "Paciente",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "paciente",
+    "resource": "Paciente",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Paciente",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Paciente",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "auditor",
+    "resource": "Paciente",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "enfermera",
+    "resource": "Paciente",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "medico",
+    "resource": "Paciente",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "paciente",
+    "resource": "Paciente",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Paciente",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Paciente",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "auditor",
+    "resource": "Paciente",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "enfermera",
+    "resource": "Paciente",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "medico",
+    "resource": "Paciente",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "paciente",
+    "resource": "Paciente",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Paciente",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Paciente",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "auditor",
+    "resource": "Paciente",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "enfermera",
+    "resource": "Paciente",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "medico",
+    "resource": "Paciente",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "paciente",
+    "resource": "Paciente",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Paciente",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Paciente",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "auditor",
+    "resource": "Paciente",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "enfermera",
+    "resource": "Paciente",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "medico",
+    "resource": "Paciente",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "paciente",
+    "resource": "Paciente",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Paciente",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Cita",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "auditor",
+    "resource": "Cita",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "enfermera",
+    "resource": "Cita",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "medico",
+    "resource": "Cita",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "paciente",
+    "resource": "Cita",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Cita",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Cita",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "auditor",
+    "resource": "Cita",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "enfermera",
+    "resource": "Cita",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "medico",
+    "resource": "Cita",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "paciente",
+    "resource": "Cita",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Cita",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Cita",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "auditor",
+    "resource": "Cita",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "enfermera",
+    "resource": "Cita",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "medico",
+    "resource": "Cita",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "paciente",
+    "resource": "Cita",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Cita",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Cita",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "auditor",
+    "resource": "Cita",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "enfermera",
+    "resource": "Cita",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "medico",
+    "resource": "Cita",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "paciente",
+    "resource": "Cita",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Cita",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Cita",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "auditor",
+    "resource": "Cita",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "enfermera",
+    "resource": "Cita",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "medico",
+    "resource": "Cita",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "paciente",
+    "resource": "Cita",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Cita",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Receta",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "auditor",
+    "resource": "Receta",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "enfermera",
+    "resource": "Receta",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "medico",
+    "resource": "Receta",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "paciente",
+    "resource": "Receta",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Receta",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Receta",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "auditor",
+    "resource": "Receta",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "enfermera",
+    "resource": "Receta",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "medico",
+    "resource": "Receta",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "paciente",
+    "resource": "Receta",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Receta",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Receta",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "auditor",
+    "resource": "Receta",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "enfermera",
+    "resource": "Receta",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "medico",
+    "resource": "Receta",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "paciente",
+    "resource": "Receta",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Receta",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Receta",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "auditor",
+    "resource": "Receta",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "enfermera",
+    "resource": "Receta",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "medico",
+    "resource": "Receta",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "paciente",
+    "resource": "Receta",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Receta",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Receta",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "auditor",
+    "resource": "Receta",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "enfermera",
+    "resource": "Receta",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "medico",
+    "resource": "Receta",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "paciente",
+    "resource": "Receta",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Receta",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Medicamento",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "auditor",
+    "resource": "Medicamento",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "enfermera",
+    "resource": "Medicamento",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "medico",
+    "resource": "Medicamento",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "paciente",
+    "resource": "Medicamento",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Medicamento",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Medicamento",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "auditor",
+    "resource": "Medicamento",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "enfermera",
+    "resource": "Medicamento",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "medico",
+    "resource": "Medicamento",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "paciente",
+    "resource": "Medicamento",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Medicamento",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Medicamento",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "auditor",
+    "resource": "Medicamento",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "enfermera",
+    "resource": "Medicamento",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "medico",
+    "resource": "Medicamento",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "paciente",
+    "resource": "Medicamento",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Medicamento",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Medicamento",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "auditor",
+    "resource": "Medicamento",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "enfermera",
+    "resource": "Medicamento",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "medico",
+    "resource": "Medicamento",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "paciente",
+    "resource": "Medicamento",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Medicamento",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Medicamento",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "auditor",
+    "resource": "Medicamento",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "enfermera",
+    "resource": "Medicamento",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "medico",
+    "resource": "Medicamento",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "paciente",
+    "resource": "Medicamento",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Medicamento",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Citas02",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "auditor",
+    "resource": "Citas02",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "enfermera",
+    "resource": "Citas02",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "medico",
+    "resource": "Citas02",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "paciente",
+    "resource": "Citas02",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Citas02",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Citas02",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "auditor",
+    "resource": "Citas02",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "enfermera",
+    "resource": "Citas02",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "medico",
+    "resource": "Citas02",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "paciente",
+    "resource": "Citas02",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Citas02",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Citas02",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "auditor",
+    "resource": "Citas02",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "enfermera",
+    "resource": "Citas02",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "medico",
+    "resource": "Citas02",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "paciente",
+    "resource": "Citas02",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Citas02",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Citas02",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "auditor",
+    "resource": "Citas02",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "enfermera",
+    "resource": "Citas02",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "medico",
+    "resource": "Citas02",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "paciente",
+    "resource": "Citas02",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Citas02",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Citas02",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "auditor",
+    "resource": "Citas02",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "enfermera",
+    "resource": "Citas02",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "medico",
+    "resource": "Citas02",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "paciente",
+    "resource": "Citas02",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Citas02",
+    "action": "read:any",
+    "attributes": "*"
+  }
+]
