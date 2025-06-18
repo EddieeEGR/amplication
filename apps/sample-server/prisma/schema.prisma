@@ -1,0 +1,99 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DB_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  createdAt DateTime @default(now())
+  email     String?  @unique
+  firstName String?
+  id        String   @id @default(cuid())
+  lastName  String?
+  password  String
+  roles     Json
+  updatedAt DateTime @updatedAt
+  username  String   @unique
+}
+
+model Medico {
+  cedula       String?
+  citas        Cita[]
+  citas02s     Citas02[]
+  createdAt    DateTime  @default(now())
+  especialidad String?
+  horarios     String?
+  id           String    @id @default(cuid())
+  perfil       String?
+  recetas      Receta[]
+  updatedAt    DateTime  @updatedAt
+}
+
+model Paciente {
+  antecedentes      String?
+  citas             Cita[]
+  citas02s          Citas02[]
+  contacto          String?
+  createdAt         DateTime  @default(now())
+  datosDemograficos String?
+  id                String    @id @default(cuid())
+  recetas           Receta[]
+  updatedAt         DateTime  @updatedAt
+}
+
+model Cita {
+  createdAt  DateTime  @default(now())
+  estado     String?
+  fecha      String?
+  id         String    @id @default(cuid())
+  medico     Medico?   @relation(fields: [medicoId], references: [id])
+  medicoId   String?
+  paciente   Paciente? @relation(fields: [pacienteId], references: [id])
+  pacienteId String?
+  tipo       String?
+  updatedAt  DateTime  @updatedAt
+}
+
+model Receta {
+  createdAt   DateTime  @default(now())
+  fecha       String?
+  id          String    @id @default(cuid())
+  medicamento String?
+  medico      Medico?   @relation(fields: [medicoId], references: [id])
+  medicoId    String?
+  paciente    Paciente? @relation(fields: [pacienteId], references: [id])
+  pacienteId  String?
+  updatedAt   DateTime  @updatedAt
+}
+
+model Medicamento {
+  createdAt DateTime @default(now())
+  dosis     String?
+  id        String   @id @default(cuid())
+  nombre    String?
+  updatedAt DateTime @updatedAt
+}
+
+model Citas02 {
+  createdAt  DateTime           @default(now())
+  estado     EnumCitas02Estado?
+  fechaHora  DateTime?
+  id         String             @id @default(cuid())
+  medico     Medico?            @relation(fields: [medicoId], references: [id])
+  medicoId   String?
+  paciente   Paciente?          @relation(fields: [pacienteId], references: [id])
+  pacienteId String?
+  tipo       EnumCitas02Tipo?
+  updatedAt  DateTime           @updatedAt
+}
+
+enum EnumCitas02Estado {
+  Option1
+}
+
+enum EnumCitas02Tipo {
+  Option1
+}
