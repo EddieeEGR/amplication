@@ -1,0 +1,42 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DB_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Usuario {
+  apellidoMaterno String?
+  apellidoPaterno String?
+  contraseA       String?
+  correo          String?
+  creadoEn        DateTime?
+  createdAt       DateTime  @default(now())
+  estatus         Boolean?
+  id              String    @id @default(cuid())
+  idUsuario       String    @unique
+  nombre          String?
+  rol             String?
+  updatedAt       DateTime  @updatedAt
+}
+
+model Paciente {
+  createdAt DateTime @default(now())
+  id        String   @id @default(cuid())
+  idUsuario String
+  pacientes String?
+  updatedAt DateTime @updatedAt
+}
+
+model Empresa {
+  createdAt       DateTime @default(now())
+  direccion       String?
+  id              String   @id @default(cuid())
+  nombreComercial String?
+  razonSocial     String?
+  rfc             String?
+  telefono        String?
+  updatedAt       DateTime @updatedAt
+}
