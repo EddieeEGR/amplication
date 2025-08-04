@@ -14,9 +14,10 @@ import { ApiProperty } from "@nestjs/swagger";
 import { StringNullableFilter } from "../../util/StringNullableFilter";
 import { Type } from "class-transformer";
 import { IsOptional } from "class-validator";
-import { DateTimeNullableFilter } from "../../util/DateTimeNullableFilter";
-import { BooleanNullableFilter } from "../../util/BooleanNullableFilter";
 import { StringFilter } from "../../util/StringFilter";
+import { DateTimeNullableFilter } from "../../util/DateTimeNullableFilter";
+import { DateTimeFilter } from "../../util/DateTimeFilter";
+import { BooleanNullableFilter } from "../../util/BooleanNullableFilter";
 
 @InputType()
 class UsuarioWhereInput {
@@ -44,25 +45,14 @@ class UsuarioWhereInput {
 
   @ApiProperty({
     required: false,
-    type: StringNullableFilter,
+    type: StringFilter,
   })
-  @Type(() => StringNullableFilter)
+  @Type(() => StringFilter)
   @IsOptional()
-  @Field(() => StringNullableFilter, {
+  @Field(() => StringFilter, {
     nullable: true,
   })
-  contraseA?: StringNullableFilter;
-
-  @ApiProperty({
-    required: false,
-    type: StringNullableFilter,
-  })
-  @Type(() => StringNullableFilter)
-  @IsOptional()
-  @Field(() => StringNullableFilter, {
-    nullable: true,
-  })
-  correo?: StringNullableFilter;
+  correo?: StringFilter;
 
   @ApiProperty({
     required: false,
@@ -74,6 +64,17 @@ class UsuarioWhereInput {
     nullable: true,
   })
   creadoEn?: DateTimeNullableFilter;
+
+  @ApiProperty({
+    required: false,
+    type: DateTimeFilter,
+  })
+  @Type(() => DateTimeFilter)
+  @IsOptional()
+  @Field(() => DateTimeFilter, {
+    nullable: true,
+  })
+  createdAt?: DateTimeFilter;
 
   @ApiProperty({
     required: false,
@@ -110,14 +111,14 @@ class UsuarioWhereInput {
 
   @ApiProperty({
     required: false,
-    type: StringNullableFilter,
+    type: StringFilter,
   })
-  @Type(() => StringNullableFilter)
+  @Type(() => StringFilter)
   @IsOptional()
-  @Field(() => StringNullableFilter, {
+  @Field(() => StringFilter, {
     nullable: true,
   })
-  nombre?: StringNullableFilter;
+  nombre?: StringFilter;
 
   @ApiProperty({
     required: false,

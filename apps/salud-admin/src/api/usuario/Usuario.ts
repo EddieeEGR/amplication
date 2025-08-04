@@ -1,14 +1,13 @@
 export type Usuario = {
   apellidoMaterno: string | null;
   apellidoPaterno: string | null;
-  contraseA: string | null;
-  correo: string | null;
+  correo: string;
   creadoEn: Date | null;
   createdAt: Date;
   estatus: boolean | null;
   id: string;
   idUsuario: string;
-  nombre: string | null;
+  nombre: string;
   rol: string | null;
   updatedAt: Date;
 };

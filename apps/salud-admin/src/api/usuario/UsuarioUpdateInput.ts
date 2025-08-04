@@ -1,11 +1,11 @@
 export type UsuarioUpdateInput = {
   apellidoMaterno?: string | null;
   apellidoPaterno?: string | null;
-  contraseA?: string | null;
-  correo?: string | null;
+  contraseA?: string;
+  correo?: string;
   creadoEn?: Date | null;
   estatus?: boolean | null;
   idUsuario?: string;
-  nombre?: string | null;
+  nombre?: string;
   rol?: string | null;
 };

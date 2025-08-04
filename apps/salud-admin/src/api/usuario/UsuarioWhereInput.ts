@@ -1,17 +1,18 @@
 import { StringNullableFilter } from "../../util/StringNullableFilter";
-import { DateTimeNullableFilter } from "../../util/DateTimeNullableFilter";
-import { BooleanNullableFilter } from "../../util/BooleanNullableFilter";
 import { StringFilter } from "../../util/StringFilter";
+import { DateTimeNullableFilter } from "../../util/DateTimeNullableFilter";
+import { DateTimeFilter } from "../../util/DateTimeFilter";
+import { BooleanNullableFilter } from "../../util/BooleanNullableFilter";
 
 export type UsuarioWhereInput = {
   apellidoMaterno?: StringNullableFilter;
   apellidoPaterno?: StringNullableFilter;
-  contraseA?: StringNullableFilter;
-  correo?: StringNullableFilter;
+  correo?: StringFilter;
   creadoEn?: DateTimeNullableFilter;
+  createdAt?: DateTimeFilter;
   estatus?: BooleanNullableFilter;
   id?: StringFilter;
   idUsuario?: StringFilter;
-  nombre?: StringNullableFilter;
+  nombre?: StringFilter;
   rol?: StringNullableFilter;
 };

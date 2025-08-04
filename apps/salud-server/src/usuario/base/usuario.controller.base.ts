@@ -35,7 +35,6 @@ export class UsuarioControllerBase {
       select: {
         apellidoMaterno: true,
         apellidoPaterno: true,
-        contraseA: true,
         correo: true,
         creadoEn: true,
         createdAt: true,
@@ -59,7 +58,6 @@ export class UsuarioControllerBase {
       select: {
         apellidoMaterno: true,
         apellidoPaterno: true,
-        contraseA: true,
         correo: true,
         creadoEn: true,
         createdAt: true,
@@ -84,7 +82,6 @@ export class UsuarioControllerBase {
       select: {
         apellidoMaterno: true,
         apellidoPaterno: true,
-        contraseA: true,
         correo: true,
         creadoEn: true,
         createdAt: true,
@@ -118,7 +115,6 @@ export class UsuarioControllerBase {
         select: {
           apellidoMaterno: true,
           apellidoPaterno: true,
-          contraseA: true,
           correo: true,
           creadoEn: true,
           createdAt: true,
@@ -152,7 +148,6 @@ export class UsuarioControllerBase {
         select: {
           apellidoMaterno: true,
           apellidoPaterno: true,
-          contraseA: true,
           correo: true,
           creadoEn: true,
           createdAt: true,

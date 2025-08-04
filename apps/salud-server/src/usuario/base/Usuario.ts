@@ -47,28 +47,12 @@ class Usuario {
   apellidoPaterno!: string | null;
 
   @ApiProperty({
-    required: false,
+    required: true,
     type: String,
   })
   @IsString()
-  @MaxLength(1000)
-  @IsOptional()
-  @Field(() => String, {
-    nullable: true,
-  })
-  contraseA!: string | null;
-
-  @ApiProperty({
-    required: false,
-    type: String,
-  })
-  @IsString()
-  @MaxLength(1000)
-  @IsOptional()
-  @Field(() => String, {
-    nullable: true,
-  })
-  correo!: string | null;
+  @Field(() => String)
+  correo!: string;
 
   @ApiProperty({
     required: false,
@@ -113,21 +97,17 @@ class Usuario {
     type: String,
   })
   @IsString()
-  @MaxLength(256)
   @Field(() => String)
   idUsuario!: string;
 
   @ApiProperty({
-    required: false,
+    required: true,
     type: String,
   })
   @IsString()
   @MaxLength(1000)
-  @IsOptional()
-  @Field(() => String, {
-    nullable: true,
-  })
-  nombre!: string | null;
+  @Field(() => String)
+  nombre!: string;
 
   @ApiProperty({
     required: false,

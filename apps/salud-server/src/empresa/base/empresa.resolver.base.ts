@@ -20,6 +20,8 @@ import { EmpresaFindUniqueArgs } from "./EmpresaFindUniqueArgs";
 import { CreateEmpresaArgs } from "./CreateEmpresaArgs";
 import { UpdateEmpresaArgs } from "./UpdateEmpresaArgs";
 import { DeleteEmpresaArgs } from "./DeleteEmpresaArgs";
+import { ClinicaFindManyArgs } from "../../clinica/base/ClinicaFindManyArgs";
+import { Clinica } from "../../clinica/base/Clinica";
 import { EmpresaService } from "../empresa.service";
 @graphql.Resolver(() => Empresa)
 export class EmpresaResolverBase {
@@ -95,5 +97,19 @@ export class EmpresaResolverBase {
       }
       throw error;
     }
+  }
+
+  @graphql.ResolveField(() => [Clinica], { name: "clinicas" })
+  async findClinicas(
+    @graphql.Parent() parent: Empresa,
+    @graphql.Args() args: ClinicaFindManyArgs
+  ): Promise<Clinica[]> {
+    const results = await this.service.findClinicas(parent.id, args);
+
+    if (!results) {
+      return [];
+    }
+
+    return results;
   }
 }

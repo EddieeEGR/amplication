@@ -10,14 +10,14 @@ generator client {
 model Usuario {
   apellidoMaterno String?
   apellidoPaterno String?
-  contraseA       String?
-  correo          String?
+  contraseA       String
+  correo          String    @unique
   creadoEn        DateTime?
   createdAt       DateTime  @default(now())
   estatus         Boolean?
   id              String    @id @default(cuid())
   idUsuario       String    @unique
-  nombre          String?
+  nombre          String
   rol             String?
   updatedAt       DateTime  @updatedAt
 }
@@ -31,12 +31,29 @@ model Paciente {
 }
 
 model Empresa {
-  createdAt       DateTime @default(now())
+  clinicas        Clinica[]
+  createdAt       DateTime  @default(now())
   direccion       String?
-  id              String   @id @default(cuid())
+  id              String    @id @default(cuid())
   nombreComercial String?
   razonSocial     String?
   rfc             String?
   telefono        String?
+  updatedAt       DateTime  @updatedAt
+}
+
+model Clinica {
+  activa          String?
+  ciudad          String?
+  cp              String?
+  createdAt       DateTime @default(now())
+  dir             String?
+  empresa         Empresa? @relation(fields: [empresaId], references: [id])
+  empresaId       String?
+  estado          String?
+  id              String   @id @default(cuid())
+  nombreComercial String?
+  razonSocial     String?
+  tel             String?
   updatedAt       DateTime @updatedAt
 }

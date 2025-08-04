@@ -51,24 +51,22 @@ class UsuarioUpdateInput {
     type: String,
   })
   @IsString()
-  @MaxLength(1000)
   @IsOptional()
   @Field(() => String, {
     nullable: true,
   })
-  contraseA?: string | null;
+  contraseA?: string;
 
   @ApiProperty({
     required: false,
     type: String,
   })
   @IsString()
-  @MaxLength(1000)
   @IsOptional()
   @Field(() => String, {
     nullable: true,
   })
-  correo?: string | null;
+  correo?: string;
 
   @ApiProperty({
     required: false,
@@ -97,7 +95,6 @@ class UsuarioUpdateInput {
     type: String,
   })
   @IsString()
-  @MaxLength(256)
   @IsOptional()
   @Field(() => String, {
     nullable: true,
@@ -114,7 +111,7 @@ class UsuarioUpdateInput {
   @Field(() => String, {
     nullable: true,
   })
-  nombre?: string | null;
+  nombre?: string;
 
   @ApiProperty({
     required: false,

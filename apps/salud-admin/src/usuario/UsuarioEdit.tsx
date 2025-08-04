@@ -1,9 +1,11 @@
 import * as React from "react";
+
 import {
   Edit,
   SimpleForm,
   EditProps,
   TextInput,
+  PasswordInput,
   DateTimeInput,
   BooleanInput,
 } from "react-admin";
@@ -14,8 +16,8 @@ export const UsuarioEdit = (props: EditProps): React.ReactElement => {
       <SimpleForm>
         <TextInput label="apellido_materno" source="apellidoMaterno" />
         <TextInput label="apellido_paterno" source="apellidoPaterno" />
-        <TextInput label="contraseña" source="contraseA" />
-        <TextInput label="correo" source="correo" />
+        <PasswordInput label="contraseña" source="contraseA" />
+        <TextInput label="correo" source="correo" type="email" />
         <DateTimeInput label="creado_en" source="creadoEn" />
         <BooleanInput label="estatus" source="estatus" />
         <TextInput label="id_usuario" source="idUsuario" />

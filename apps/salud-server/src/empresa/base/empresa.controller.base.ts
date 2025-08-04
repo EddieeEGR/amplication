@@ -22,6 +22,9 @@ import { Empresa } from "./Empresa";
 import { EmpresaFindManyArgs } from "./EmpresaFindManyArgs";
 import { EmpresaWhereUniqueInput } from "./EmpresaWhereUniqueInput";
 import { EmpresaUpdateInput } from "./EmpresaUpdateInput";
+import { ClinicaFindManyArgs } from "../../clinica/base/ClinicaFindManyArgs";
+import { Clinica } from "../../clinica/base/Clinica";
+import { ClinicaWhereUniqueInput } from "../../clinica/base/ClinicaWhereUniqueInput";
 
 export class EmpresaControllerBase {
   constructor(protected readonly service: EmpresaService) {}
@@ -152,5 +155,94 @@ export class EmpresaControllerBase {
       }
       throw error;
     }
+  }
+
+  @common.Get("/:id/clinicas")
+  @ApiNestedQuery(ClinicaFindManyArgs)
+  async findClinicas(
+    @common.Req() request: Request,
+    @common.Param() params: EmpresaWhereUniqueInput
+  ): Promise<Clinica[]> {
+    const query = plainToClass(ClinicaFindManyArgs, request.query);
+    const results = await this.service.findClinicas(params.id, {
+      ...query,
+      select: {
+        activa: true,
+        ciudad: true,
+        cp: true,
+        createdAt: true,
+        dir: true,
+
+        empresa: {
+          select: {
+            id: true,
+          },
+        },
+
+        estado: true,
+        id: true,
+        nombreComercial: true,
+        razonSocial: true,
+        tel: true,
+        updatedAt: true,
+      },
+    });
+    if (results === null) {
+      throw new errors.NotFoundException(
+        `No resource was found for ${JSON.stringify(params)}`
+      );
+    }
+    return results;
+  }
+
+  @common.Post("/:id/clinicas")
+  async connectClinicas(
+    @common.Param() params: EmpresaWhereUniqueInput,
+    @common.Body() body: ClinicaWhereUniqueInput[]
+  ): Promise<void> {
+    const data = {
+      clinicas: {
+        connect: body,
+      },
+    };
+    await this.service.updateEmpresa({
+      where: params,
+      data,
+      select: { id: true },
+    });
+  }
+
+  @common.Patch("/:id/clinicas")
+  async updateClinicas(
+    @common.Param() params: EmpresaWhereUniqueInput,
+    @common.Body() body: ClinicaWhereUniqueInput[]
+  ): Promise<void> {
+    const data = {
+      clinicas: {
+        set: body,
+      },
+    };
+    await this.service.updateEmpresa({
+      where: params,
+      data,
+      select: { id: true },
+    });
+  }
+
+  @common.Delete("/:id/clinicas")
+  async disconnectClinicas(
+    @common.Param() params: EmpresaWhereUniqueInput,
+    @common.Body() body: ClinicaWhereUniqueInput[]
+  ): Promise<void> {
+    const data = {
+      clinicas: {
+        disconnect: body,
+      },
+    };
+    await this.service.updateEmpresa({
+      where: params,
+      data,
+      select: { id: true },
+    });
   }
 }

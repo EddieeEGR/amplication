@@ -20,7 +20,6 @@ export const UsuarioList = (props: ListProps): React.ReactElement => {
       <Datagrid rowClick="show" bulkActionButtons={false}>
         <TextField label="apellido_materno" source="apellidoMaterno" />
         <TextField label="apellido_paterno" source="apellidoPaterno" />
-        <TextField label="contraseña" source="contraseA" />
         <TextField label="correo" source="correo" />
         <TextField label="creado_en" source="creadoEn" />
         <DateField source="createdAt" label="Created At" />

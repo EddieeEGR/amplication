@@ -11,11 +11,27 @@ https://docs.amplication.com/how-to/custom-code
   */
 import { ObjectType, Field } from "@nestjs/graphql";
 import { ApiProperty } from "@nestjs/swagger";
-import { IsDate, IsString, MaxLength, IsOptional } from "class-validator";
+import { Clinica } from "../../clinica/base/Clinica";
+import {
+  ValidateNested,
+  IsOptional,
+  IsDate,
+  IsString,
+  MaxLength,
+} from "class-validator";
 import { Type } from "class-transformer";
 
 @ObjectType()
 class Empresa {
+  @ApiProperty({
+    required: false,
+    type: () => [Clinica],
+  })
+  @ValidateNested()
+  @Type(() => Clinica)
+  @IsOptional()
+  clinicas?: Array<Clinica>;
+
   @ApiProperty({
     required: true,
   })

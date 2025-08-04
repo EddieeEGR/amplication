@@ -17,6 +17,10 @@ import { EmpresaList } from "./empresa/EmpresaList";
 import { EmpresaCreate } from "./empresa/EmpresaCreate";
 import { EmpresaEdit } from "./empresa/EmpresaEdit";
 import { EmpresaShow } from "./empresa/EmpresaShow";
+import { ClinicaList } from "./clinica/ClinicaList";
+import { ClinicaCreate } from "./clinica/ClinicaCreate";
+import { ClinicaEdit } from "./clinica/ClinicaEdit";
+import { ClinicaShow } from "./clinica/ClinicaShow";
 import { jwtAuthProvider } from "./auth-provider/ra-auth-jwt";
 
 const App = (): React.ReactElement => {
@@ -50,6 +54,13 @@ const App = (): React.ReactElement => {
           edit={EmpresaEdit}
           create={EmpresaCreate}
           show={EmpresaShow}
+        />
+        <Resource
+          name="Clinica"
+          list={ClinicaList}
+          edit={ClinicaEdit}
+          create={ClinicaCreate}
+          show={ClinicaShow}
         />
       </Admin>
     </div>
